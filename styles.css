@@ -1,0 +1,129 @@
+/*1. GLOBAL RESET AND BASE STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Seogoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #e6f1ff;
+    color: rgb(51, 51, 51);
+}
+/*2. NAVBAR / HEADER */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a252f;
+    padding: 1rem 2rem;
+    color: white;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+.logo span {
+    color: #34badb;
+}
+.navbar nav a {
+    color: #db34c5;
+}
+/*3. HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),url('https://images.unsplash.com/photo=1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80') center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 81, 255);
+    text-align: center;
+}
+/*4. FLEET / CARS SHOWCASE */
+.container{
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+h2{
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+.car-grid {
+    display: grid;
+    grid-template-columns: repeate(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.car-card {
+    background:white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.car-card h3 {
+    margin-bottom: 0.5rem;
+}
+.car-card .price {
+    color: #27ae60;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+,car-card button {
+    background-color: #3498db;
+    color:rgb(0, 174, 255);
+    borber: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.car-card button:hover {
+    background-color: #2980b9;
+}
+/*5. BOOKING FORM */
+.form-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: o 4px 6px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-group.inline{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.form-group.inline div {
+    flex: 1;
+}
+label{
+    font-weght: 600;
+    margin-bottom: 0.4rem;
+}
+input {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+input[readonly] {
+    background-color: #e9ecef;
+}
+.btn-submit {
+    width: 100%;
+    background-color: #27ae60;
+    color: red;
+    padding: 0.8rem;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: #217b91;
+}
